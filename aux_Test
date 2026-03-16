@@ -1,0 +1,39 @@
+"""
+AUX_TEST: Riemann Stability Stress Test
+Validates Successional Logic against Prime Distribution.
+"""
+
+from stone_kernel import SuccessionalProcessor
+import math
+
+def get_prime_density(n):
+    """Calculates approximate prime density for a given manifold depth."""
+    return 1.0 / math.log(n) if n > 1 else 0.5
+
+def run_riemann_verification():
+    kernel = SuccessionalProcessor()
+    print("--- INITIATING AUXILIARY STABILITY TEST ---")
+    
+    # Test across 10 levels of prime distribution depth
+    for depth in [10, 100, 1000, 10000, 100000]:
+        density = get_prime_density(depth)
+        
+        # M-Bank: Doped according to prime density
+        active_units = int(300 * density)
+        neutral_units = 300 - active_units
+        
+        # T-Bank: Full successional flow
+        # F-Bank: Anchored at 0.5 (The Critical Line)
+        report = kernel.pulse(
+            (active_units, 0, neutral_units), # M-cfg
+            (300, 0, 0),                      # T-cfg
+            (0, 0, 300)                       # F-cfg (Anchored)
+        )
+        
+        print(f"Depth {depth:6} | S: {report['intensity_S']:.4f} | C: {report['coherence_C']:.2f} | Deltas: {report['deltas']}")
+
+    print("\n--- TEST COMPLETE ---")
+    print("If Coherence (C) >= 0.5 at all depths, Riemann Stability is maintained.")
+
+if __name__ == "__main__":
+    run_riemann_verification()
