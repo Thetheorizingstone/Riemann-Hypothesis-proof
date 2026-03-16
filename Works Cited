@@ -1,0 +1,38 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{\textbf{Works Cited and Technical References:}\\ \large Stability Resolution of the Riemann Hypothesis via Successional Wave Architecture}
+\author{Stone Software Solutions | Record ID: SSS-RH-2026-001}
+\date{March 16, 2026}
+
+\begin{document}
+
+\maketitle
+
+\section*{Foundational Mathematics}
+\begin{description}
+    \item[Riemann, B. (1859).] "Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse." \textit{Monatsberichte der Königlichen Preußischen Akademie der Wissenschaften zu Berlin.}
+    \item[Conrey, J. B. (2003).] "The Riemann Hypothesis." \textit{Notices of the AMS}, 50(3), 341-353.
+    \item[Derbyshire, J. (2003).] \textit{Prime Obsession: Bernhard Riemann and the Greatest Unsolved Problem in Mathematics.} Joseph Henry Press.
+\end{description}
+
+\section*{Computational Logic \& Physical Stability}
+\begin{description}
+    \item[Feynman, R. P. (1982).] "Simulating Physics with Computers." \textit{International Journal of Theoretical Physics}, 21(6/7).
+    \item[Landauer, R. (1961).] "Irreversibility and Heat Generation in the Computing Process." \textit{IBM Journal of Research and Development}, 5(3).
+    \item[Shannon, C. E. (1948).] "A Mathematical Theory of Communication." \textit{Bell System Technical Journal}, 27(3).
+    \item[Wolfram, S. (2002).] \textit{A New Kind of Science.} Wolfram Media.
+\end{description}
+
+\section*{Primary Technical Records (Stone-Kernel)}
+\begin{description}
+    \item[Stone, T. R-C. (2026).] "The Stone Law of Universality: A Physical Resolution to Mathematical Singularities." \textit{SSS Technical White Paper}, SSS-RH-2026-001.
+    \item[Stone, T. R-C. (2026).] "Stone-Kernel v1.0: Successional Kernel and Recursive Processor Source Code." GitHub: \url{https://github.com/Thetheorizingstone/Riemann-Hypothesis-proof}
+    \item[Stone, T. R-C. (2025).] "Stone-Network: Peer-to-Peer Mesh Sovereignty." Zenodo: \url{10.5281/zenodo.19051456}
+    \item[Stone Software Solutions (2026).] "Interactive Riemann Stability Terminal." \url{https://stonesshop.org}
+\end{description}
+
+\end{document}
